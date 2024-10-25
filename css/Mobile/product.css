@@ -1,0 +1,77 @@
+.products {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  background-color: #2b2b2b;
+  .product {
+    width: 40%;
+    padding: 20px;
+    min-width: 500px;
+    box-sizing: border-box;
+    background-color: rgb(159, 21, 21);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 25px black;
+    h1 {
+      color: whitesmoke;
+      text-transform: capitalize;
+    }
+    img {
+      width: 40%;
+    }
+    .description {
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: whitesmoke;
+      text-transform: capitalize;
+    }
+    .price {
+      color: whitesmoke;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+    .category {
+      color: whitesmoke;
+      text-transform: capitalize;
+    }
+    .rating {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .rate,
+      .count {
+        color: whitesmoke;
+        text-transform: capitalize;
+      }
+    }
+    a.btn {
+      display: block;
+      width: fit-content;
+      background-color: green;
+      box-shadow: 5px 5px 25px rgba(40, 183, 40, 0.71);
+      border-radius: 5px;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: whitesmoke;
+      transition: 500ms;
+      &:hover {
+        transform: scale(85%);
+      }
+    }
+  }
+}
